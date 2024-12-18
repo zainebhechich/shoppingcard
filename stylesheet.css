@@ -1,0 +1,189 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #4f2424;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.shopping-card-container {
+  width: 90%;
+  max-width: 1200px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(201, 129, 129, 0.87);
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Product List */
+.list-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(243, 101, 117, 0.878);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.unit-price {
+  color: #8e4f4f;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.quantity {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/* Buttons */
+i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.fa-trash-alt {
+  color: #de6b5c;
+}
+
+.fa-heart {
+  color: #de6b5c;
+}
+
+.fa-heart.liked {
+  color: #de6b5c;
+}
+
+i:hover {
+  color: #753232;
+}
+
+
+@media (max-width: 768px) {
+  .list-products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .total-price {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px rgba(120, 60, 60, 0.949);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.quantity,
+.unit-price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.total-price {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.fa-trash-alt:hover,
+.fa-heart:hover {
+  transform: scale(1.1);
+}
+
+.fa-heart {
+  transition: color 0.3s ease;
+}
+
+.fa-heart.liked {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .list-products {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  background-color: #eadddd;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
